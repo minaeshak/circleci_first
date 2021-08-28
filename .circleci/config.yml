@@ -42,5 +42,5 @@ jobs:
 workflows:
   welcome:
     jobs:
-      - print_pipline_id_job
+      - error_handling
 
