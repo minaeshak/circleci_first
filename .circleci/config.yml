@@ -14,7 +14,7 @@ jobs:
       - run:                
           name: "echo an env var that is part of our project"
           command: |
-            echo $MY_NAME
+            echo $my_name
   print_world:
     docker:
       - image: circleci/node:13.8.0
