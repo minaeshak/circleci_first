@@ -9,7 +9,7 @@ jobs:
     steps:
       - run: echo "Hello World" > output.txt
       - persist_to_workspace:
-            root: /tmp/dir
+            root: ~/
             paths:
               - output.txt
   print_output_file:
@@ -18,7 +18,7 @@ jobs:
     steps:
       - run: cat output.txt
       - attach_workspace:
-          at: /tmp/dir
+          at: ~/
 workflows:
   # Name the workflow "welcome"
   welcome:
